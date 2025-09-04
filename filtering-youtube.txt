@@ -1,0 +1,75 @@
+//SlopBlocker remove all the brainrot, slop and AI Videos, Channels, Short-form videos, Search Results etc. (React channels who don't credit creators also count)
+
+//FOR YOUTUBE SHORTS PLEASE USE "filters-youtube-shorts.txt" instead!
+
+//Think of it as a community database where people collect and add them to block for you, thank them later!
+
+//To add a list of videos, Fork the repository, Follow the format below (you just need to have the IDs for videos) and send a pull request on the way, thanks for contributing!
+
+//**Videos is highly recommended to be validated using Icognito/Private Window to ensure we do not get false positives**
+
+//Since I use YouTube, this filter is maintaned also by Gorujo (whatever I can find obviously)
+
+
+
+//BEFORE ADDING VIDEOS PLEASE CHECK IF THE CHANNEL IS ALREADY BLOCKED, IF IT IS YOU WONT NEED TO ADD A VIDEO FILTER
+
+
+//Youtube Videos on search results
+
+//FOLLOW THE FORMAT:
+//youtube.com##ytd-video-renderer:has(a[href*="/watch?v=[videoid]"]):remove()
+
+youtube.com##ytd-video-renderer:has(a[href*="/watch?v=kOHDKYHUOKM"]):remove()
+
+
+//Youtube Videos on User's feed (DO THIS AFTER ADDING ABOVE VIDEO)
+
+//copy paste here to hide from user's feed now as follows:
+//youtube.com##ytd-rich-item-renderer:has(a[href*="/watch?v=[videoid]):remove()
+
+
+
+//Youtube Channels on Search results
+
+//FOLLOW THE FORMAT:
+//youtube.com##ytd-channel-renderer:has(a[href*="/{channel_id_or_@username"]):remove()
+//Below specify the reason using //Reason below the filter for removing the channel, this helps with transparency
+//If a channel is already blocked, no need to add their videos!
+
+youtube.com##ytd-channel-renderer:has(a[href*="/@kwebbelkop"]):remove()
+//Kwebellkop is known to upload full AI Slop on his shorts especially and likely on his main videos too
+
+youtube.com##ytd-channel-renderer:has(a[href*="/@caylusblox"]):remove()
+//Generic Youtuber attracting mostly kids viewers, Mainly plays "Steal a Brainrot" on Roblox alot
+
+
+youtube.com##ytd-channel-renderer:has(a[href*="/@SSundeeReacts"]):remove()
+//Generic reaction channel (from SSundee), does not credit creators for their videos
+
+youtube.com##ytd-channel-renderer:has(a[href*="/@MoreJynxzi"]):remove()
+youtube.com##ytd-channel-renderer:has(a[href*="/@Jynxzi"]):remove()
+//Clash royale clickbait creator with some to say the least, a little bit distrubing faces or other things sometimes in the thumbnail
+
+
+//Blocked Youtube Channel's videos both on search and user feed (DO THIS AFTER ADDING ABOVE CHANNEL)
+
+//Now add a Filter to filter out all the channel's videos including the user's home feed as follows:
+//youtube.com##ytd-video-renderer:has(a[href*="/{channel_id_or_@username"]):remove()
+//youtube.com##ytd-rich-item-renderer:has(a[href*="/{channel_id_or_@username"]):remove()
+
+youtube.com##ytd-video-renderer:has(a[href*="/@kwebbelkop"]):remove()
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@kwebbelkop"]):remove()
+
+youtube.com##ytd-video-renderer:has(a[href*="/@caylusblox"]):remove()
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@caylusblox"]):remove()
+
+youtube.com##ytd-video-renderer:has(a[href*="/@SSundeeReacts"]):remove()
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@SSundeeReacts"]):remove()
+
+youtube.com##ytd-video-renderer:has(a[href*="/@MoreJynxzi"]):remove()
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@MoreJynxzi"]):remove()
+
+youtube.com##ytd-video-renderer:has(a[href*="/@Jynxzi"]):remove()
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@Jynxzi"]):remove()
+
