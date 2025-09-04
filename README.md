@@ -4,7 +4,7 @@ Remove all the brainrot, slop and AI Videos, Channels, Short-form videos, Search
 # TODO
 Reserving this readme for to do for now since it's late at night
 
-- [X] Add Youtube
+- [X] ~~Add Youtube~~
 - [ ] Add Youtube Shorts
 - [ ] Add for Search Engines
 - [ ] Add for TikTok
