@@ -27,6 +27,8 @@ youtube.com##ytd-video-renderer:has(a[href*="/watch?v=kOHDKYHUOKM"]):remove()
 
 //copy paste here to hide from user's feed now as follows:
 //youtube.com##ytd-rich-item-renderer:has(a[href*="/watch?v=[videoid]):remove()
+youtube.com##ytd-rich-item-renderer:has(a[href*="/watch?v=kOHDKYHUOKM"]):remove()
+
 
 
 
