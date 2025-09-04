@@ -8,4 +8,4 @@ Reserving this readme for to do for now since it's late at night
 - [ ] Add Youtube Shorts
 - [ ] Add for Search Engines
 - [ ] Add for TikTok
-- [ ] Finish README
+- [ ] Add ways to support [Finanically or the project] and Finish README
